@@ -9,5 +9,10 @@ pipeline {
                 sh 'ls -lah'
             }
         }
+        stage('Another One') {
+            steps {
+                sh 'docker --version'
+            }
+        }
     }
 }
